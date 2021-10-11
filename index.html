@@ -13,6 +13,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
         crossorigin="anonymous"
     >
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -45,6 +47,182 @@
             </div>
         </div>
     </nav>
+
+    <section id="featured" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#featured" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#featured" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#featured" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- First project image -->
+                <img src="./assets/images/testImage.jpg" class="d-block w-100" alt="First Project">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First Project</h5>
+                    <p>Description of first project. It was a pretty good one, yeah?</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- First project image -->
+                <img src="./assets/images/testImage.jpg" class="d-block w-100" alt="First Project">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second Project</h5>
+                    <p>Description of second project. I remember that project. gooooood times.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- First project image -->
+                <img src="./assets/images/testImage.jpg" class="d-block w-100" alt="First Project">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third Project</h5>
+                    <p>Description of third project. If I could only go back and make this thing again, that'd be heaven.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#featured" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#featured" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </section>
+
+    <!-- Projects list -->
+    <section id="projects">
+        <h2 class="display-2 p-4">Projects</h2>
+        <ul class="list-group">
+            <li class="list-group-item w-100">
+                <div class="d-flex flex-row align-items-center justify-content-start w-100">
+                    <!-- Evergreen project elements (image, tools used) -->
+                    <img class="col-3" src="assets/images/testImage.jpg">
+
+                    <div class="d-flex flex-column p-2">
+                        <h3 class="display-3">Project Title 1</h3>
+                        <p>Tool 1, Tool 2, Tool 3</p>
+                    </div>
+
+                    <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-1" aria-expanded="false" aria-controls="project-description-1">
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                </div>
+
+                <div class="collapse" id="project-description-1">
+                    <!-- Collapsible project elements -->
+                    <p>Description of project 1</p>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex flex-row align-items-center w-100">
+                    <!-- Evergreen project elements (image, tools used) -->
+                    <img class="col-3" src="assets/images/testImage.jpg">
+
+                    <div class="d-flex flex-column p-2">
+                        <h3 class="display-3">Project Title 2</h3>
+                        <p>Tool 1, Tool 2, Tool 3</p>
+                    </div>
+
+                    <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-2" aria-expanded="false" aria-controls="project-description-2">
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                </div>
+
+                <div class="collapse" id="project-description-2">
+                    <!-- Collapsible project elements -->
+                    <p>Description of project 2</p>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="d-flex flex-row align-items-center w-100">
+                    <!-- Evergreen project elements (image, tools used) -->
+                    <img class="col-3" src="assets/images/testImage.jpg">
+
+                    <div class="d-flex flex-column p-2">
+                        <h3 class="display-3">Project Title 3</h3>
+                        <p>Tool 1, Tool 2, Tool 3</p>
+                    </div>
+
+                    <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-3" aria-expanded="false" aria-controls="project-description-3">
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                </div>
+
+                <div class="collapse" id="project-description-3">
+                    <!-- Collapsible project elements -->
+                    <p>Description of project 3</p>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="d-flex flex-row align-items-center w-100">
+                    <!-- Evergreen project elements (image, tools used) -->
+                    <img class="col-3" src="assets/images/testImage.jpg">
+
+                    <div class="d-flex flex-column p-2">
+                        <h3 class="display-3">Project Title 4</h3>
+                        <p>Tool 1, Tool 2, Tool 3</p>
+                    </div>
+
+                    <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-4" aria-expanded="false" aria-controls="project-description-4">
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                </div>
+
+                <div class="collapse" id="project-description-4">
+                    <!-- Collapsible project elements -->
+                    <p>Description of project 4</p>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="d-flex flex-row align-items-center w-100">
+                    <!-- Evergreen project elements (image, tools used) -->
+                    <img class="col-3" src="assets/images/testImage.jpg">
+
+                    <div class="d-flex flex-column p-2">
+                        <h3 class="display-3">Project Title 5</h3>
+                        <p>Tool 1, Tool 2, Tool 3</p>
+                    </div>
+
+                    <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-5" aria-expanded="false" aria-controls="project-description-5">
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                </div>
+
+                <div class="collapse" id="project-description-5">
+                    <!-- Collapsible project elements -->
+                    <p>Description of project 5</p>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="d-flex flex-row align-items-center w-100">
+                    <!-- Evergreen project elements (image, tools used) -->
+                    <img class="col-3" src="assets/images/testImage.jpg">
+
+                    <div class="d-flex flex-column p-2">
+                        <h3 class="display-3">Project Title 6</h3>
+                        <p>Tool 1, Tool 2, Tool 3</p>
+                    </div>
+
+                    <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-6" aria-expanded="false" aria-controls="project-description-6">
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                </div>
+
+                <div class="collapse" id="project-description-6">
+                    <!-- Collapsible project elements -->
+                    <p>Description of project 6</p>
+                </div>
+            </li>
+        </ul>
+    </section>
 
     <!-- Scripts -->
     <!-- Bootstrap Bundle JS -->
