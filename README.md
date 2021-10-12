@@ -1,4 +1,4 @@
-# Project Title
+# Professional Portfolio
 
 This is a professional portfolio for my web design work. It includes links to my github, linkedIn, email, and a copy of my resume.
 
