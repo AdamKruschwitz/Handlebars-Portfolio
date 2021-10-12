@@ -45,13 +45,13 @@
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" href="https://github.com/AdamKruschwitz"><i class="bi bi-github"></i> Adam Kruschwitz</a>
+                                <a class="dropdown-item" href="https://github.com/AdamKruschwitz" target="_blank"><i class="bi bi-github pe-2"></i>Adam Kruschwitz</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="https://linkedin.com/li/adamkruschwitz"><i class="bi bi-linkedin"></i> /li/adamkruschwitz</a>
+                                <a class="dropdown-item" href="https://linkedin.com/li/adamkruschwitz" target="_blank"><i class="bi bi-linkedin pe-2"></i>/li/adamkruschwitz</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="mailto:https://linkedin.com/li/adamkruschwitz"><i class="bi bi-envelope"></i> a.j.kruschwitz@gmail.com</a>
+                                <a class="dropdown-item" href="mailto:https://linkedin.com/li/adamkruschwitz"><i class="bi bi-envelope pe-2"></i>a.j.kruschwitz@gmail.com</a>
                             </li>
                         </ul>
                     </li>
@@ -60,56 +60,56 @@
                         
                     </li>
                 </ul>
-                <a class="nav-link btn btn-light text-dark ms-auto" href="assets/resume.pdf" download>Download Resume</a>
+                <a class="nav-link btn btn-light text-dark ms-auto" href="assets/resume.pdf" target="_blank" download>Download Resume</a>
             </div>
         </div>
         
     </nav>
 
     <!-- Featured carousel -->
-    <section id="featured" class="carousel slide carousel-fade vh-100" data-bs-ride="carousel">
+    <section id="featured" class="carousel slide carousel-fade"  data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#featured" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#featured" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#featured" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active vh-100">
+            <div class="carousel-item active h-100">
                 <!-- First project image -->
-                <img src="./assets/images/testImage.jpg" class="d-block w-100 overflow-hidden" alt="First Project">
+                <img src="./assets/images/3DGallery.gif" class="w-100"  alt="Demo of 3D Art Gallery">
                 <div class="carousel-caption d-none d-md-block text-start">
-                    <h5 class="">First Project</h5>
-                    <p>Description of first project. It was a pretty good one, yeah?</p>
+                    <h5 class="">3D Art Gallery</h5>
+                    <p>A 3D Art Gallery pulling from the Rijks museum. Rendered using Three.js, generating shader maps at runtime. All working from the client side.</p>
                 </div>
             </div>
 
-            <div class="carousel-item  vh-100">
+            <div class="carousel-item h-100">
                 <!-- First project image -->
-                <img src="./assets/images/testImage.jpg" class="d-block w-100 overflow-hidden" alt="First Project">
-                <div class="carousel-caption d-none d-md-block text-start">
-                    <h5>Second Project</h5>
-                    <p>Description of second project. I remember that project. gooooood times.</p>
+                <img src="./assets/images/CodingQuiz.gif" class="w-100" alt="Demo of Code Quiz">
+                <div class="carousel-caption d-none d-md-block text-start text-dark">
+                    <h5>Code Quiz</h5>
+                    <p>A code quiz built with jQuery and bootstrap. Allows users to save their high score and review questions they got wrong.</p>
                 </div>
             </div>
 
-            <div class="carousel-item  vh-100">
+            <div class="carousel-item h-100">
                 <!-- First project image -->
-                <img src="./assets/images/testImage.jpg" class="d-block w-100 overflow-hidden" alt="First Project">
-                <div class="carousel-caption d-none d-md-block text-start">
-                    <h5>Third Project</h5>
-                    <p>Description of third project. If I could only go back and make this thing again, that'd be heaven.</p>
+                <img src="./assets/images/WeatherDashboard.gif" class="w-100" alt="Demo of WeatherDashboard">
+                <div class="carousel-caption d-none d-md-block text-start text-dark">
+                    <h5>Weather Dashboard</h5>
+                    <p>A weather dashboard application built with Bootstrap and leveraging the OpenWeather API. Allows users to search for a 5 day forecast based on city.</p>
                 </div>
             </div>
         </div>
         <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#featured" data-bs-slide="prev">
+        <button class="carousel-control-prev prev-button" type="button" data-bs-target="#featured" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#featured" data-bs-slide="next">
+        </button>
+        <button class="carousel-control-next next-button" type="button" data-bs-target="#featured" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>
+        </button>
     </section>
 
     <!-- Projects list -->
@@ -122,18 +122,21 @@
                     <img class="col-3" src="assets/images/testImage.jpg">
 
                     <div class="d-flex flex-column p-2">
-                        <h3 class="display-3">Project Title 1</h3>
-                        <p>Tool 1, Tool 2, Tool 3</p>
+                        <h3 class="display-3">3D Gallery</h3>
+                        <p>ThreeJS, Bootstrap, jQuery</p>
+                        <div class="collapse" id="project-description-1">
+                            <!-- Collapsible project elements -->
+                            <p>A 3D Gallery viewer for the Rijks Museum of Art. Allows users to search for and discover new paintings to view rendered in 3D. This renderer runs fully on the client side and shader textures are generated for each image at runtime using the image manipulation library JIMP. Created by Adam Kruschwitz, Alex Gibson, and Henry Kam</p>
+                            <div class="d-flex justify-content-start">
+                                <a href="https://argibson02.github.io/3d-gallery-walk/" class="btn btn-light me-2" target="_blank">Live Site</a>
+                                <a href="https://github.com/argibson02/3d-gallery-walk" class="btn btn-light" target="_blank">Github</a>
+                            </div>
+                        </div>
                     </div>
 
                     <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-1" aria-expanded="false" aria-controls="project-description-1">
                         <i class="bi bi-chevron-down"></i>
                     </a>
-                </div>
-
-                <div class="collapse" id="project-description-1">
-                    <!-- Collapsible project elements -->
-                    <p>Description of project 1</p>
                 </div>
             </li>
             <li class="list-group-item">
@@ -142,7 +145,7 @@
                     <img class="col-3" src="assets/images/testImage.jpg">
 
                     <div class="d-flex flex-column p-2">
-                        <h3 class="display-3">Project Title 2</h3>
+                        <h3 class="display-3">Code Quiz</h3>
                         <p>Tool 1, Tool 2, Tool 3</p>
                     </div>
 
@@ -163,7 +166,7 @@
                     <img class="col-3" src="assets/images/testImage.jpg">
 
                     <div class="d-flex flex-column p-2">
-                        <h3 class="display-3">Project Title 3</h3>
+                        <h3 class="display-3">Weather Dashboard</h3>
                         <p>Tool 1, Tool 2, Tool 3</p>
                     </div>
 
