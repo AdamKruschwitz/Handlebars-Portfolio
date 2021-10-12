@@ -78,8 +78,8 @@
                 <!-- First project image -->
                 <img src="./assets/images/3DGallery.gif" class="w-100"  alt="Demo of 3D Art Gallery">
                 <div class="carousel-caption d-none d-md-block text-start">
-                    <h5 class="">3D Art Gallery</h5>
-                    <p>A 3D Art Gallery pulling from the Rijks museum. Rendered using Three.js, generating shader maps at runtime. All working from the client side.</p>
+                    <h5 class="display-1">3D Art Gallery</h5>
+                    <p class="lead">A 3D Art Gallery pulling from the Rijks museum. Rendered using Three.js, generating shader maps at runtime.</p>
                 </div>
             </div>
 
@@ -87,8 +87,8 @@
                 <!-- First project image -->
                 <img src="./assets/images/CodingQuiz.gif" class="w-100" alt="Demo of Code Quiz">
                 <div class="carousel-caption d-none d-md-block text-start text-dark">
-                    <h5>Code Quiz</h5>
-                    <p>A code quiz built with jQuery and bootstrap. Allows users to save their high score and review questions they got wrong.</p>
+                    <h5 class="display-1">Code Quiz</h5>
+                    <p class="lead">A code quiz built with jQuery and bootstrap. Allows users to save their high score and review questions they got wrong.</p>
                 </div>
             </div>
 
@@ -96,8 +96,8 @@
                 <!-- First project image -->
                 <img src="./assets/images/WeatherDashboard.gif" class="w-100" alt="Demo of WeatherDashboard">
                 <div class="carousel-caption d-none d-md-block text-start text-dark">
-                    <h5>Weather Dashboard</h5>
-                    <p>A weather dashboard application built with Bootstrap and leveraging the OpenWeather API. Allows users to search for a 5 day forecast based on city.</p>
+                    <h5 class="display-1">Weather Dashboard</h5>
+                    <p class="lead">A weather dashboard application built with Bootstrap and leveraging the OpenWeather API. Allows users to search for a 5 day forecast based on city.</p>
                 </div>
             </div>
         </div>
@@ -114,16 +114,16 @@
 
     <!-- Projects list -->
     <section id="projects">
-        <h2 class="display-2 p-4">Projects</h2>
+        <h2 class="display-2 p-4 d-block bg-dark text-light">Projects</h2>
         <ul class="list-group">
             <li class="list-group-item w-100">
                 <div class="d-flex flex-row align-items-center justify-content-start w-100">
                     <!-- Evergreen project elements (image, tools used) -->
-                    <img class="col-3" src="assets/images/testImage.jpg">
+                    <img class="col-3" src="assets/images/3DGalleryScreenshot.PNG">
 
                     <div class="d-flex flex-column p-2">
                         <h3 class="display-3">3D Gallery</h3>
-                        <p>ThreeJS, Bootstrap, jQuery</p>
+                        <p class="lead ps-2">ThreeJS, Bootstrap, jQuery</p>
                         <div class="collapse" id="project-description-1">
                             <!-- Collapsible project elements -->
                             <p>A 3D Gallery viewer for the Rijks Museum of Art. Allows users to search for and discover new paintings to view rendered in 3D. This renderer runs fully on the client side and shader textures are generated for each image at runtime using the image manipulation library JIMP. Created by Adam Kruschwitz, Alex Gibson, and Henry Kam</p>
@@ -134,113 +134,56 @@
                         </div>
                     </div>
 
-                    <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-1" aria-expanded="false" aria-controls="project-description-1">
+                    <a class="btn ms-auto h-100" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-1" aria-expanded="false" aria-controls="project-description-1">
                         <i class="bi bi-chevron-down"></i>
                     </a>
                 </div>
             </li>
-            <li class="list-group-item">
-                <div class="d-flex flex-row align-items-center w-100">
+            <li class="list-group-item w-100">
+                <div class="d-flex flex-row align-items-center justify-content-start w-100">
                     <!-- Evergreen project elements (image, tools used) -->
-                    <img class="col-3" src="assets/images/testImage.jpg">
+                    <img class="col-3" src="assets/images/CodingQuizScreenshot.PNG">
 
                     <div class="d-flex flex-column p-2">
-                        <h3 class="display-3">Code Quiz</h3>
-                        <p>Tool 1, Tool 2, Tool 3</p>
+                        <h3 class="display-3">JavaScript Quiz</h3>
+                        <p class="lead ps-2">jQuery</p>
+                        <div class="collapse" id="project-description-2">
+                            <!-- Collapsible project elements -->
+                            <p>A javascript quiz built with jQuery and custom CSS. Tests users on their knowledge of JavaScript, tracks their score, and allows users to look back at questions they missed for review. Created as an assignment for the UC Berkley full stack development bootcamp.</p>
+                            <div class="d-flex justify-content-start">
+                                <a href="https://adamkruschwitz.github.io/code-quiz/" class="btn btn-light me-2" target="_blank">Live Site</a>
+                                <a href="https://github.com/AdamKruschwitz/code-quiz" class="btn btn-light" target="_blank">Github</a>
+                            </div>
+                        </div>
                     </div>
 
                     <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-2" aria-expanded="false" aria-controls="project-description-2">
                         <i class="bi bi-chevron-down"></i>
                     </a>
                 </div>
-
-                <div class="collapse" id="project-description-2">
-                    <!-- Collapsible project elements -->
-                    <p>Description of project 2</p>
-                </div>
             </li>
 
-            <li class="list-group-item">
-                <div class="d-flex flex-row align-items-center w-100">
+            <li class="list-group-item w-100">
+                <div class="d-flex flex-row align-items-center justify-content-start w-100">
                     <!-- Evergreen project elements (image, tools used) -->
-                    <img class="col-3" src="assets/images/testImage.jpg">
+                    <img class="col-3" src="assets/images/WeatherDashboardScreenshot.PNG">
 
                     <div class="d-flex flex-column p-2">
                         <h3 class="display-3">Weather Dashboard</h3>
-                        <p>Tool 1, Tool 2, Tool 3</p>
+                        <p class="lead ps-2">jQuery, Bootstrap</p>
+                        <div class="collapse" id="project-description-3">
+                            <!-- Collapsible project elements -->
+                            <p>A weather dashboard meant for planning travel destinations. Users can search for the weather by city, and receive the current weather and a 5 day forecast. Built using JQuery and Bootstrap, leveraging the OpenWeather OneCall and Geocoding API's. This was created as an assignment for the UC Berkley full stack web development bootcamp.</p>
+                            <div class="d-flex justify-content-start">
+                                <a href="https://adamkruschwitz.github.io/weather-dashboard/" class="btn btn-light me-2" target="_blank">Live Site</a>
+                                <a href="https://github.com/AdamKruschwitz/weather-dashboard" class="btn btn-light" target="_blank">Github</a>
+                            </div>
+                        </div>
                     </div>
 
                     <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-3" aria-expanded="false" aria-controls="project-description-3">
                         <i class="bi bi-chevron-down"></i>
                     </a>
-                </div>
-
-                <div class="collapse" id="project-description-3">
-                    <!-- Collapsible project elements -->
-                    <p>Description of project 3</p>
-                </div>
-            </li>
-
-            <li class="list-group-item">
-                <div class="d-flex flex-row align-items-center w-100">
-                    <!-- Evergreen project elements (image, tools used) -->
-                    <img class="col-3" src="assets/images/testImage.jpg">
-
-                    <div class="d-flex flex-column p-2">
-                        <h3 class="display-3">Project Title 4</h3>
-                        <p>Tool 1, Tool 2, Tool 3</p>
-                    </div>
-
-                    <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-4" aria-expanded="false" aria-controls="project-description-4">
-                        <i class="bi bi-chevron-down"></i>
-                    </a>
-                </div>
-
-                <div class="collapse" id="project-description-4">
-                    <!-- Collapsible project elements -->
-                    <p>Description of project 4</p>
-                </div>
-            </li>
-
-            <li class="list-group-item">
-                <div class="d-flex flex-row align-items-center w-100">
-                    <!-- Evergreen project elements (image, tools used) -->
-                    <img class="col-3" src="assets/images/testImage.jpg">
-
-                    <div class="d-flex flex-column p-2">
-                        <h3 class="display-3">Project Title 5</h3>
-                        <p>Tool 1, Tool 2, Tool 3</p>
-                    </div>
-
-                    <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-5" aria-expanded="false" aria-controls="project-description-5">
-                        <i class="bi bi-chevron-down"></i>
-                    </a>
-                </div>
-
-                <div class="collapse" id="project-description-5">
-                    <!-- Collapsible project elements -->
-                    <p>Description of project 5</p>
-                </div>
-            </li>
-
-            <li class="list-group-item">
-                <div class="d-flex flex-row align-items-center w-100">
-                    <!-- Evergreen project elements (image, tools used) -->
-                    <img class="col-3" src="assets/images/testImage.jpg">
-
-                    <div class="d-flex flex-column p-2">
-                        <h3 class="display-3">Project Title 6</h3>
-                        <p>Tool 1, Tool 2, Tool 3</p>
-                    </div>
-
-                    <a class="btn ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#project-description-6" aria-expanded="false" aria-controls="project-description-6">
-                        <i class="bi bi-chevron-down"></i>
-                    </a>
-                </div>
-
-                <div class="collapse" id="project-description-6">
-                    <!-- Collapsible project elements -->
-                    <p>Description of project 6</p>
                 </div>
             </li>
         </ul>
@@ -248,7 +191,7 @@
 
     <!-- About -->
     <section id="about">
-        <h2 class="display-2 p-4">About Me</h2>
+        <h2 class="display-2 p-4 d-block bg-dark text-light">About Me</h2>
         <div class="d-flex align-items-center flex-wrap pb-4">
             <img class="flex-shrink-0 rounded-circle col-12 col-lg-3 pb-4 pb-lg-0 px-lg-4" src="assets/images/AdamKruschwitz.jpg">
             <p class="flex-fill col-12 col-lg-6">Description of myself</p>
