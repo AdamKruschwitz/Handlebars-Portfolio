@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <!-- Sticky Navbar -->
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Adam Kruschwitz</a>
@@ -37,7 +38,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -65,6 +66,7 @@
         
     </nav>
 
+    <!-- Featured carousel -->
     <section id="featured" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#featured" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -74,17 +76,17 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!-- First project image -->
-                <img src="./assets/images/testImage.jpg" class="d-block w-100" alt="First Project">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First Project</h5>
+                <img src="./assets/images/testImage.jpg" class="d-block max-w-100" alt="First Project">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <h5 class="">First Project</h5>
                     <p>Description of first project. It was a pretty good one, yeah?</p>
                 </div>
             </div>
 
             <div class="carousel-item">
                 <!-- First project image -->
-                <img src="./assets/images/testImage.jpg" class="d-block w-100" alt="First Project">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="./assets/images/testImage.jpg" class="d-block" alt="First Project">
+                <div class="carousel-caption d-none d-md-block text-start">
                     <h5>Second Project</h5>
                     <p>Description of second project. I remember that project. gooooood times.</p>
                 </div>
@@ -92,8 +94,8 @@
 
             <div class="carousel-item">
                 <!-- First project image -->
-                <img src="./assets/images/testImage.jpg" class="d-block w-100" alt="First Project">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="./assets/images/testImage.jpg" class="d-block" alt="First Project">
+                <div class="carousel-caption d-none d-md-block text-start">
                     <h5>Third Project</h5>
                     <p>Description of third project. If I could only go back and make this thing again, that'd be heaven.</p>
                 </div>
@@ -241,13 +243,18 @@
         </ul>
     </section>
 
-    <section id="About Me">
+    <!-- About -->
+    <section id="about">
         <h2 class="display-2 p-4">About Me</h2>
-        <div class="d-flex align-items-center flex-wrap">
-            <img class="flex-shrink-0 rounded-circle col-12 col-lg-3 pb-4 pb-lg-0 pe-lg-4" src="assets/images/testImage.jpg">
+        <div class="d-flex align-items-center flex-wrap pb-4">
+            <img class="flex-shrink-0 rounded-circle col-12 col-lg-3 pb-4 pb-lg-0 px-lg-4" src="assets/images/AdamKruschwitz.jpg">
             <p class="flex-fill col-12 col-lg-6">Description of myself</p>
         </div>
     </section>
+
+    <footer class="vw-100 p-4 bg-dark text-light text-center">
+        Made by Adam Kruschwitz with <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="text-decoration-none">Bootstrap</a>
+    </footer>
 
     <!-- Scripts -->
     <!-- Bootstrap Bundle JS -->
