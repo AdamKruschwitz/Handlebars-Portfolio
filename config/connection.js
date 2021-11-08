@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 
 require('dotenv').config();
 
-const sequelize;
+var sequelize;
 
 //if deployed on heroku
 if(process.env.JAWSDB_URL) {
