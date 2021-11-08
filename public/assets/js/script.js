@@ -11,3 +11,6 @@ function scrollToTop(){
       scrollTop: $(divId).offset().top - 54
     }, 100);
 }
+
+// Set the first carousel slide in the featured carousel as active
+$('.carousel-item').first().addClass('active');

@@ -20,17 +20,17 @@ Project.init(
         "gif-alt": {
             type: DataTypes.STRING,
         },
-        "iamge-name": {
+        "image-name": {
             type: DataTypes.STRING,
         },
         "image-alt": {
             type: DataTypes.STRING,
         },
         "short-description": {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
         },
         "long-description": {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
         },
         technologies: {
             type: DataTypes.STRING,
