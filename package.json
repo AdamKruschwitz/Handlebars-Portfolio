@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/AdamKruschwitz/Professional-Portfolio/issues"
   },
-  "homepage": "https://github.com/AdamKruschwitz/Professional-Portfolio#readme"
+  "homepage": "https://github.com/AdamKruschwitz/Professional-Portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "sequelize": "^6.9.0"
+  }
 }
