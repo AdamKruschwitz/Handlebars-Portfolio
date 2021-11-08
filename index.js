@@ -25,11 +25,11 @@ app.get('/', async function (req, res) {
         }
     });
     const all =  await Project.findAll();
-    console.log(featured, all);
+    console.log(all);
 
     // Parse data into simple JSON
     const featuredJSON = featured.map(project => project.get({ plain: true }));
-    const allJSON = featured.map(project => project.get({ plain: true }));
+    const allJSON = all.map(project => project.get({ plain: true }));
     
     // Render the page
     res.render('home', { featured: featuredJSON, projects: allJSON });
