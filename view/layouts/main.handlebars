@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Adam Kruschwitz</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous"
+    >
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-navy">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Adam Kruschwitz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tabs" aria-controls="tabs" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div id="tabs" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="featured-nav" href="/#featured">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        {{!-- TODO change to dropdown for featured and all --}}
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="https://github.com/AdamKruschwitz" target="_blank"><i class="bi bi-github pe-2"></i>Adam Kruschwitz</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://linkedin.com/li/adamkruschwitz" target="_blank"><i class="bi bi-linkedin pe-2"></i>/li/adamkruschwitz</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="mailto:https://linkedin.com/li/adamkruschwitz"><i class="bi bi-envelope pe-2"></i>a.j.kruschwitz@gmail.com</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=>
+                        
+                    </li>
+                </ul>
+                <a class="nav-link btn btn-light text-dark ms-auto" href="assets/resume.pdf" target="_blank" download>Download Resume</a>
+            </div>
+        </div>
+        
+    </nav>
+
+    <!-- Featured carousel -->
+    <section id="featured" class="carousel slide carousel-fade"  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#featured" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#featured" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#featured" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            {{#each featured as |featured-projects|}}
+            {{>carousel-slide}}
+            {{/each}}
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev prev-button" type="button" data-bs-target="#featured" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next next-button" type="button" data-bs-target="#featured" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <!-- Projects list -->
+    <section id="projects">
+        <h2 class="display-2 p-4 d-block bg-navy text-light">Projects</h2>
+        <ul class="list-group">
+            {{#each projects as |project|}}
+            {{> project-listing }}
+            {{/each}}
+        </ul>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="display-2 p-4 d-block bg-navy text-light">About Me</h2>
+        <div class="d-flex align-items-center flex-wrap pb-4">
+            <img class="rounded-circle col-12 col-lg-4 px-lg-4" src="assets/images/AdamKruschwitz.jpg">
+            <div class="flex-fill col-12 col-lg-8">
+                <p id="work-statement" class="display-5">I am a web developer working out of the Bay Area california, looking for remote work.</p>
+                <p class="fs-4">I grew up in Rochester, NY and attended Ithaca College, graduating with a B.A in Computer Science. I worked at ZL Technologies, a records management SaaS company, for two years after graduating before deciding to expand my knowledge once again at Berkley's Full Stack Web Development Bootcamp. </p>
+                <p class="fs-4">In my free time, I enjoy playing Magic the Gathering&trade;, designing and crocheting plush figures, and volunteering through mutual aid organizations in my community. I hope to bring the spirit of creativity and camaraderie I exercise through my hobbies into my workplace.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-100 p-4 bg-navy text-light text-center">
+        <p>
+            Made by Adam Kruschwitz with 
+            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="text-decoration-none">Bootstrap</a>,
+            <a href="http://expressjs.com/" class="text-decoration-none">Express</a>,
+            <a href="https://sequelize.org/" class="text-decoration-none">Sequelize</a>, and
+            <a href="https://handlebarsjs.com/" class="text-decoration-none">Handlebars</a>.
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
