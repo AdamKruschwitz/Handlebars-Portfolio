@@ -42,7 +42,10 @@ Project.init(
             type: DataTypes.STRING,
         },
         featured: {
-            type: DataTypes.BOOLEAN
+            type: DataTypes.BOOLEAN,
+        },
+        "text-color": {
+            type: DataTypes.STRING,
         }
     },
     {

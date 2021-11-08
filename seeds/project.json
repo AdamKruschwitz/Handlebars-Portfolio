@@ -10,7 +10,8 @@
         "technologies": "ThreeJS, Bootstrap, jQuery",
         "deployed-link": "https://argibson02.github.io/3d-gallery-walk/",
         "github-link": "https://github.com/argibson02/3d-gallery-walk",
-        "featured": true
+        "featured": true,
+        "text-color": "text-light"
     },
     {
         "title": "JavaScript Quiz",
@@ -23,7 +24,8 @@
         "technologies": "jQuery",
         "deployed-link": "https://adamkruschwitz.github.io/code-quiz/",
         "github-link": "https://github.com/AdamKruschwitz/code-quiz",
-        "featured": true
+        "featured": true,
+        "text-color": "text-dark"
     },
     {
         "title": "Weather Dashboard",
@@ -36,7 +38,8 @@
         "technologies": "jQuery, Bootstrap",
         "deployed-link": "https://adamkruschwitz.github.io/weather-dashboard/",
         "github-link": "https://github.com/AdamKruschwitz/weather-dashboard",
-        "featured": true
+        "featured": true,
+        "text-color": "text-dark"
     },
     {
         "title": "Animates",
@@ -49,6 +52,7 @@
         "technologies": "Express, Sequelize, Handlebars, Two.js",
         "deployed-link": "https://peaceful-cliffs-69062.herokuapp.com/",
         "github-link": "https://github.com/amackenzie26/Animates",
-        "featured": false
+        "featured": false,
+        "text-color": "text-dark"
     }
 ]
