@@ -14,7 +14,7 @@ This is a professional portfolio for my web design work. It includes links to my
 
 * [See Live Site](https://adamkruschwitz.github.io/Professional-Portfolio/)
 
-![Demo of the site](./assets/images/demo.gif)
+![Demo of the site](public\assets\images\demo.gif)
 
 ## Authors
 
@@ -22,7 +22,7 @@ This is a professional portfolio for my web design work. It includes links to my
 
 - [Portfolio](https://adamkruschwitz.github.io/Professional-Portfolio/)
 - [Github](https://github.com/AdamKruschwitz)
-- [LinkedIn](https://www.linkedin.com/li/adamkruschwitz)
+- [LinkedIn](https://www.linkedin.com/in/adamkruschwitz)
 
 See also the list of [contributors](https://github.com/AdamKruschwitz/Professional-Portfolio/contributors) who participated in this project.
 
