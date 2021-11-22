@@ -20,7 +20,7 @@ This is a professional portfolio for my web design work. It includes links to my
 
 **Adam Kruschwitz** 
 
-- [Portfolio](https://adamkruschwitz.github.io/Professional-Portfolio/)
+- [Portfolio](https://arcane-tundra-19228.herokuapp.com/)
 - [Github](https://github.com/AdamKruschwitz)
 - [LinkedIn](https://www.linkedin.com/in/adamkruschwitz)
 
